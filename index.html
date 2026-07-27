@@ -13,13 +13,16 @@
     <div class="container">
         <h1>Quadratic Calculator</h1>
         <h2>ax<sup>2</sup> + bx + c = 0</h2>
-        <form action="#">
+        <form action="#" role="form" aria-label="Quadratic equation solver">
+            <label for="a">Coefficient a</label>
             <input type="number" placeholder="Enter a" id="a">
+            <label for="b">Coefficient b</label>
             <input type="number" placeholder="Enter b" id="b">
+            <label for="c">Coefficient c</label>
             <input type="number" placeholder="Enter c" id="c">
-            <button id="btn">Calculate</button>
+            <button type="submit" id="btn">Calculate</button>
         </form>
-        <p id="answerParagraph"></p>
+        <p id="answerParagraph" aria-live="polite" aria-atomic="true"></p>
     </div>
     
 

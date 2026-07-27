@@ -1,6 +1,8 @@
 
-const btn = document.getElementById("btn")
-btn.addEventListener("click", ()=> {
+const form = document.querySelector("form");
+form.addEventListener("submit", (event)=> {
+    event.preventDefault();
+
     const a = Number(document.getElementById("a").value);
     const b = Number(document.getElementById("b").value);
     const c = Number(document.getElementById("c").value);
